@@ -249,6 +249,16 @@ img {
   width: 100%;
 }
 
+.section-subtitle {
+  color: var(--bg-majorelle-blue);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-block: 10px;
+}
+
 
 
 
@@ -537,9 +547,28 @@ img {
 \*-----------------------------------*/
 
 
-.service-subtitle {
-  color: var(--bg-majorelle-blue);
-  margin-block-end: 20px;
+.service-section .container {
+  display: grid;
+  gap: 25px;
+}
+
+.service-card {
+  padding: 25px 20px;
+  border-radius: var(--radius-20);
+}
+
+.service-card:nth-child(2) {
+  background-color: var(--bg-chrome-yellow-alpha-5);
+}
+.service-card:nth-child(3) {
+  background-color: var(--bg-red-salsa-alpha-5);
+}
+.service-card:nth-child(4) {
+  background-color: var(--bg-majorelle-blue-alpha-5);
+}
+
+.card-title {
+  padding-block: 10px 5px;
 }
 
 
@@ -548,6 +577,7 @@ img {
 /*-----------------------------------*\
   #DESTINATION
 \*-----------------------------------*/
+
 
 
 
