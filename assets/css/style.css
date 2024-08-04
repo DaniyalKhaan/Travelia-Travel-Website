@@ -623,7 +623,7 @@ img {
   transition: var(--transition-fast);
 }
 
-.card-title:is(:hover, :focus-visible) {
+.destination-card .card-title:is(:hover, :focus-visible) {
   color: var(--text-majorelle-blue);
 }
 
@@ -727,17 +727,158 @@ img {
 .cta-card {
   padding: 60px 20px;
   background-color: var(--bg-misty-rose);
-  background-color: rgb(253, 132, 118);
+  border-radius: var(--radius-30);
+  text-align: center;
+  @
 }
 
+.cta-card .h2 .img {
+
+  
+}
+
+.cta-card .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 0 20px;
+}
+
+.cta .container .btn {
+  margin-inline: auto;
+  margin-block-start: 20px;
+}
 
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
+.footer-brand .logo img {
+  width: 180px;
+}
+
+.footer-brand .footer-text {
+  margin-block: 20px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  font-size: var(--fontSize-5);
+  color: var(--text-majorelle-blue);
+  padding: 10px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-fast);
+}
+
+.social-link:is(:hover, :focus-visible) {
+  background-color: var(--bg-majorelle-blue);
+  color: var(--text-white);
+}
 
 
+.footer-top {
+  display: grid;
+  gap: 40px;
+  padding-block: 60px;
+}
+
+.footer-nav .h3 {
+  font-size: var(--fontSize-5);
+  margin-block-end: 15px;
+}
+
+.footer-link {
+  margin-block-start: 10px;
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
+
+.footer-form-section .footer-text {
+  margin-block-end: 15px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-gainsboro);
+  border-radius: var(--radius-pill);
+}
+
+.footer-form:focus-within {
+  border-color: var(--bg-majorelle-blue);
+  box-shadow: var(--shadow-1);
+}
+
+
+
+.footer-form .input-field {
+  flex: 1;
+  height: 55px;
+  padding-inline-start: 25px;
+  color: var(--text-gunmetal);
+}
+
+
+
+.footer-form .input-btn {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-majorelle-blue);
+  border-radius: var(--radius-circle);
+  color: var(--text-white);
+  transition: var(--transition-fast);
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.input-btn:is(:hover, :focus-visible) {
+  background-color: var(--bg-ocean-blue);
+}
+
+.input-btn ion-icon {
+  transform: translateX(-2px) rotate(45deg);
+}
+
+
+.footer-bottom {
+  padding: 30px;
+  border-block-start: 1px solid var(--bg-gainsboro);
+}
+
+.copyright {
+  margin-block-end: 20px;
+}
+
+.copyright-link {
+  color: var(--text-majorelle-blue);
+  font-weight: 500;
+  display: inline-block;
+  transition: var(--transition-fast);
+}
+
+.copyright-link:is(:hover, :focus-visible) {
+  color: var(--bg-ocean-blue);
+}
+
+.footer-bottom-list {
+  display: grid;
+  gap: 4px;
+}
+
+.footer-bottom-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
 
 
 /*-----------------------------------*\
