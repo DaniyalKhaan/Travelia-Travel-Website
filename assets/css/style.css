@@ -1285,3 +1285,110 @@ img {
 
 
 }
+
+/* Responsive for larger than 1200 px  */
+
+@media (min-width: 1200px) {
+
+
+  :root {
+    /* Font Sizes */
+  --fontSize-1: 6.4rem;
+  --fontSize-2: 4.8rem;
+  --fontSize-3: 3rem;
+
+  }
+
+  /* Containers */
+
+  .container {
+    max-width: 1150px;
+  }
+
+  /* Header */
+
+  .header .logo img {
+    width: 180px;
+  }
+
+  .navbar-list {
+    gap: 50px;
+  }
+
+  .header-actions {
+    gap: 40px;
+  }
+
+  /* Hero */
+
+  .hero-title {
+    margin-block: 30px;
+  }
+
+  .hero-text {
+    margin-block-end: 50px;
+  }
+
+  /* Services */
+
+  .service-section .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-section .title-wrapper {
+    grid-column: span 3;
+  }
+
+  /* Destination */
+
+
+  .destination-card .card-price {
+    font-size: 2rem;
+    padding: 8px 20px;
+  }
+
+  .destination-card .card-title {
+    margin-block: 30px 10px;
+  }
+
+  .destination-card .card-rating {
+    margin-block-start: 15px;
+  }
+
+  /* experience */
+
+  .exp .section-text {
+    margin-block: 30px 40px;
+  }
+
+  .exp .exp-list {
+    gap: 50px;
+  }
+
+  /* Cta */
+
+  .cta .cta-card {
+    padding-block: 120px;
+  }
+
+  /* Footer */
+
+  .footer-brand .footer-text {
+    margin-block: 35px 30px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
+    gap: 60px;
+  }
+
+  .footer-nav .h3 {
+    margin-block-end: 25px;
+  }
+
+  .footer-bottom-list {
+    gap: 40px;
+  }
+
+  
+}
